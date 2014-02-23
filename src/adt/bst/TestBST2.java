@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestBST2 {
-	
+	//conflito
 	protected BSTImpl<Integer, Integer> tree1;
 	protected BSTImpl<Integer, Integer> tree2;
 	protected BSTImpl<Integer, Integer> tree3;
@@ -27,7 +27,7 @@ public class TestBST2 {
 			tree2.insert(i, i);
 		}
 		
-		// Árvore completa
+		// Ãrvore completa
 		tree3 = new BSTImpl<Integer, Integer>();
 		tree3.insert(5, 5);
 		tree3.insert(3, 3);
@@ -37,7 +37,7 @@ public class TestBST2 {
 		tree3.insert(6, 6);
 		tree3.insert(9, 9);
 		
-		// Árvore vazia
+		// Ãrvore vazia
 		tree4 = new BSTImpl<Integer, Integer>();
 	}
 
@@ -72,7 +72,7 @@ public class TestBST2 {
 			assertEquals(new Integer(i), tree1.search(i).getKey());
 		}
 		
-		// testa a busca por um elemento que não existe
+		// testa a busca por um elemento que nÄƒo existe
 		assertEquals(null, tree2.search(10).getKey());
 		
 		
@@ -82,14 +82,14 @@ public class TestBST2 {
 		assertEquals(new Integer(6), tree3.search(6).getKey());
 		assertEquals(new Integer(4), tree3.search(4).getKey());
 		
-		// testa a busca em uma árvore vazia
+		// testa a busca em uma Ã¡rvore vazia
 		assertEquals(null, tree4.search(10).getKey());
 	}
 
 	@Test
 	public void testInsert() {
 		int[] keys = {8,4,12,2,6,10,14,1,3,5,7,9,11,13,15};
-		// insere elementos de 1 a 15 de forma que a árvore fique completa
+		// insere elementos de 1 a 15 de forma que a Ã¡rvore fique completa
 		for (int i : keys) {
 			tree4.insert(i, i);
 		}
@@ -120,7 +120,7 @@ public class TestBST2 {
 		node.value = 4;
 		assertEquals(null, tree1.sucessor(node));
 		
-		// cria uma árvore específica mostrada no slide de EDA
+		// cria uma Ã¡rvore especÃ­fica mostrada no slide de EDA
 		int[] keys = {15,6,3,7,2,4,13,9};
 		for (int i : keys) {
 			tree4.insert(i, i);
@@ -156,7 +156,7 @@ public class TestBST2 {
 		node.value = 0;
 		assertEquals(null, tree1.predecessor(node));
 		
-		// cria uma árvore específica mostrada no slide de EDA
+		// cria uma Ã¡rvore especÃ­fica mostrada no slide de EDA
 		int[] keys = {15,23,22,16,18};
 		for (int i : keys) {
 			tree4.insert(i, i);
@@ -184,7 +184,7 @@ public class TestBST2 {
 
 	@Test
 	public void testRemove() {
-		// Remove todos os elementos da árvore com filhos a direita
+		// Remove todos os elementos da Ã¡rvore com filhos a direita
 		tree1.remove(0);
 		assertArrayEquals(new Integer[]{1,2,3,4},tree1.preOrder());
 		assertArrayEquals(new Integer[]{4,3,2,1},tree1.postOrder());
@@ -198,7 +198,7 @@ public class TestBST2 {
 		assertArrayEquals(new Integer[]{},tree1.postOrder());
 		tree1.remove(4);
 		
-		// Remove todos os elementos da árvore com filhos a esquerda
+		// Remove todos os elementos da Ã¡rvore com filhos a esquerda
 		tree2.remove(4);
 		assertArrayEquals(new Integer[]{3,2,1,0},tree2.preOrder());
 		assertArrayEquals(new Integer[]{0,1,2,3},tree2.postOrder());
@@ -212,7 +212,7 @@ public class TestBST2 {
 		assertArrayEquals(new Integer[]{},tree2.postOrder());
 		tree2.remove(0);
 		
-		// Remove todos os elementos da árvore completa
+		// Remove todos os elementos da Ã¡rvore completa
 		tree3.remove(4);
 		assertArrayEquals(new Integer[]{5,3,1,8,6,9},tree3.preOrder());
 		assertArrayEquals(new Integer[]{1,3,6,9,8,5},tree3.postOrder());
