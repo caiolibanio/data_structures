@@ -6,8 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestBST2 {
-	//lascou
-	//conflitohahakkkresolvido
+	
 	protected BSTImpl<Integer, Integer> tree1;
 	protected BSTImpl<Integer, Integer> tree2;
 	protected BSTImpl<Integer, Integer> tree3;
