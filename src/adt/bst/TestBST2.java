@@ -6,8 +6,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestBST2 {
+<<<<<<< HEAD
 	//vai ficar assimlool
 	//okokok
+=======
+	//vai ficar assim
+>>>>>>> branch 'master' of https://caiolibanio@bitbucket.org/caiolibanio/data_structures.git
 	//kkkkk
 	protected BSTImpl<Integer, Integer> tree1;
 	protected BSTImpl<Integer, Integer> tree2;
