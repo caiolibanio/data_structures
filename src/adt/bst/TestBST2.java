@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class TestBST2 {
 	//lascou
-	//lascou1
+	//lascou1w
 	//conflito
 	protected BSTImpl<Integer, Integer> tree1;
 	protected BSTImpl<Integer, Integer> tree2;
