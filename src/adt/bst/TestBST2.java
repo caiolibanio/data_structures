@@ -6,10 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestBST2 {
-<<<<<<< HEAD
 	//conflito
-=======
->>>>>>> branch 'master' of https://caiolibanio@bitbucket.org/caiolibanio/data_structures.git
 	//teste
 	protected BSTImpl<Integer, Integer> tree1;
 	protected BSTImpl<Integer, Integer> tree2;
